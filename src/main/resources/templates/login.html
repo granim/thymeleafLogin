@@ -7,14 +7,14 @@
 <body>
 <h1>Please Login</h1>
     <form th:action="@{/login}" th:object="${loginForm}" method="post">
-        <label for="username">Username</label>
-        <input type="text" is="username" name="username" autofocus="autofocus"/>
+        <label for="userName">Username</label>
+        <input type="text" id="userName" name="userName" autofocus="autofocus"/>
 
         <label for="password">Password</label>
-        <input type="password" is="password" name="password"/>
+        <input type="password" id="password" name="password"/>
         <br/>
         <input type="submit" value="Log In"/>
-        
+
     </form>
 
 </body>
